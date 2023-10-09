@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/external-service/api1-redis.iml" filepath="$PROJECT_DIR$/external-service/api1-redis.iml" />
-      <module fileurl="file://$PROJECT_DIR$/redis-service/external-service.iml" filepath="$PROJECT_DIR$/redis-service/external-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/external-service/external-service.iml" filepath="$PROJECT_DIR$/external-service/external-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/jwt-apigateway-security.iml" filepath="$PROJECT_DIR$/.idea/jwt-apigateway-security.iml" />
       <module fileurl="file://$PROJECT_DIR$/main-app/main-app.iml" filepath="$PROJECT_DIR$/main-app/main-app.iml" />
