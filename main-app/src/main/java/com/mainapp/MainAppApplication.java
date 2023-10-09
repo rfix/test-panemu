@@ -1,4 +1,4 @@
-package com.external;
+package com.mainapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
