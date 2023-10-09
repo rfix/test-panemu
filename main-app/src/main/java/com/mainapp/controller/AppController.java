@@ -1,6 +1,8 @@
 package com.mainapp.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.mainapp.dto.TodoDto;
+import com.mainapp.dto.user.UserDto;
 import com.mainapp.service.AppService;
 import com.mainapp.dto.OrderResponseDTO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,18 +20,13 @@ public class AppController {
     @Autowired
     private AppService service;
 
-    @GetMapping("/home")
-    public String greetingMessage() {
-        return service.greeting();
-    }
-
-    @GetMapping("/{orderId}")
-    public OrderResponseDTO checkOrderStatus(@PathVariable String orderId) {
-        return service.checkOrderStatus(orderId);
-    }
-
     @GetMapping("/todo/{id}")
     public List<TodoDto> getTodoById(@PathVariable Long id) {
         return service.todoById(id);
+    }
+
+    @GetMapping("/user/{id}")
+    public List<UserDto> getUserById(@PathVariable Long id) throws JsonProcessingException {
+        return service.userById(id);
     }
 }

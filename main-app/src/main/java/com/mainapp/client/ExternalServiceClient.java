@@ -15,10 +15,6 @@ public class ExternalServiceClient {
     @Autowired
     private RestTemplate template;
 
-    public OrderResponseDTO fetchOrderStatus(String orderId) {
-        return template.getForObject("http://EXTERNAL-SERVICE/external/orders/status/" + orderId, OrderResponseDTO.class);
-    }
-
     public List<TodoDto> fetchTodoById(Long id) {
         ResponseEntity<TodoDto[]> response = template.getForEntity("http://EXTERNAL-SERVICE/external/todo/" + id, TodoDto[].class);
         return List.of(Objects.requireNonNull(response.getBody()));

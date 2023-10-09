@@ -84,12 +84,27 @@
     <orderEntry type="library" name="Maven: org.codehaus.woodstox:stax2-api:4.2.1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-starter-loadbalancer:4.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-loadbalancer:4.0.1" level="project" />
-    <orderEntry type="library" name="Maven: io.projectreactor:reactor-core:3.5.3" level="project" />
-    <orderEntry type="library" name="Maven: org.reactivestreams:reactive-streams:1.0.4" level="project" />
     <orderEntry type="library" name="Maven: io.projectreactor.addons:reactor-extra:3.5.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-cache:3.0.4" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-context-support:6.0.6" level="project" />
     <orderEntry type="library" name="Maven: com.stoyanr:evictor:1.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-data-redis:3.0.4" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-redis:3.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-keyvalue:3.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:3.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-tx:6.0.6" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-oxm:6.0.6" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context-support:6.0.6" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:2.0.6" level="project" />
+    <orderEntry type="library" name="Maven: io.lettuce:lettuce-core:6.2.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-common:4.1.89.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-handler:4.1.89.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-resolver:4.1.89.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-buffer:4.1.89.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-transport-native-unix-common:4.1.89.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-codec:4.1.89.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-transport:4.1.89.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.projectreactor:reactor-core:3.5.3" level="project" />
+    <orderEntry type="library" name="Maven: org.reactivestreams:reactive-streams:1.0.4" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.26" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-starter-test:3.0.4" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-test:3.0.4" level="project" />
@@ -98,7 +113,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: net.minidev:json-smart:2.4.8" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: net.minidev:accessors-smart:2.4.8" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.ow2.asm:asm:9.1" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:2.0.6" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:4.0.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: jakarta.activation:jakarta.activation-api:2.1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.assertj:assertj-core:3.23.1" level="project" />
