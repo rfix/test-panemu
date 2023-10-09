@@ -1,0 +1,21 @@
+spring:
+ cloud:
+   gateway:
+     routes:
+       - id: main-app
+         uri: lb://MAIN-APP
+         predicates:
+           - Path=/main/**
+
+       - id: external-service
+         uri: lb://EXTERNAL-SERVICE
+         predicates:
+           - Path=/external/**
+
+ application:
+   name: GATEWAY
+
+eureka:
+  client:
+    service-url:
+      defaultZone : http://localhost:8761/eureka/
