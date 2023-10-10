@@ -1,23 +1,33 @@
 package com.mainapp.config;
 
+import org.apache.commons.lang.StringUtils;
+import org.redisson.Redisson;
+import org.redisson.api.RedissonClient;
+import org.redisson.config.Config;
+import org.redisson.config.SingleServerConfig;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.data.redis.connection.RedisStandaloneConfiguration;
-import org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory;
 
 @Configuration
 public class RedisConfig {
-    @Value("${redis.host}")
+    @Value("${app.redis.host}")
     private String redisHost;
 
-    @Value("${redis.port}")
-    private int redisPort;
+    @Value("${app.redis.password}")
+    private String redisPass;
 
     @Bean
-    public LettuceConnectionFactory redisConnectionFactory() {
-        RedisStandaloneConfiguration configuration = new RedisStandaloneConfiguration(redisHost, redisPort);
+    public RedissonClient redissonClient() {
+        Config config = new Config();
 
-        return new LettuceConnectionFactory(configuration);
+        SingleServerConfig server = config.useSingleServer();
+        server.setAddress(this.redisHost);
+
+        if (StringUtils.isNotEmpty(this.redisPass)) {
+            server.setPassword(this.redisPass);
+        }
+
+        return Redisson.create(config);
     }
 }

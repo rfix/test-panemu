@@ -17,3 +17,11 @@ h
 8main-app/src/main/java/com/mainapp/dto/user/UserDto.java,c\f\cf52b5d957d1ae26ab1124e3718295a8ffa7621b
 €
 Pexternal-service/src/test/java/com/external/ExternalServiceApplicationTests.java,5\5\551051420f10af36cd278bc53fd215ab441d2fcb
+j
+:main-app/src/main/java/com/mainapp/MainAppApplication.java,7\a\7a790cacb88c5111fdf9efaea64412810bebde8b
+j
+:main-app/src/main/java/com/mainapp/service/AppService.java,f\7\f70d1f37f8b5323e8b243f486c0ceb8d4a2c8c81
+t
+Dmain-app/src/main/java/com/mainapp/client/ExternalServiceClient.java,8\3\83793aafb605932e3951b3becf398bea3850974a
+p
+@main-app/src/main/java/com/mainapp/controller/AppController.java,d\c\dc856107bdd085a6df812d06225f7841440f5761
