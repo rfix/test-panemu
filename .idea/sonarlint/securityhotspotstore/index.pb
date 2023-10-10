@@ -5,3 +5,15 @@ r
 Bgateway/src/main/java/com/gateway/filter/AuthenticationFilter.java,a\6\a64ac9a94d2b448687c63f1ca56533c1f202975d
 l
 <gateway/src/main/java/com/gateway/filter/RouteValidator.java,f\5\f5b6e902872fe9bb4e96be64a27df19fef3b9aeb
+k
+;main-app/src/main/java/com/mainapp/dto/user/CompanyDto.java,c\f\cfa854cfeab33f4d47fb4cde315bd2317435bd60
+l
+<main-app/src/main/java/com/mainapp/dto/OrderResponseDTO.java,8\9\89c3e555a3bd7779a44beb8b8b7d7018d6071519
+y
+Iexternal-service/src/main/java/com/external/client/TodoServiceClient.java,f\e\feec0f2cc8f139829f04447c5a05951219f6b35a
+k
+;main-app/src/main/java/com/mainapp/dto/user/AddressDto.java,0\b\0b76ca1a476f58769b989f2406e94f38014296e2
+h
+8main-app/src/main/java/com/mainapp/dto/user/UserDto.java,c\f\cf52b5d957d1ae26ab1124e3718295a8ffa7621b
+€
+Pexternal-service/src/test/java/com/external/ExternalServiceApplicationTests.java,5\5\551051420f10af36cd278bc53fd215ab441d2fcb

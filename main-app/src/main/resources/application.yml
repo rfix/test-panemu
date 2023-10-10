@@ -9,3 +9,10 @@ eureka:
   client:
     service-url:
       defaultZone : http://localhost:8761/eureka/
+
+
+redis:
+  url: redis-sentinel://localhost:6379/0#mymaster
+  sentinel:
+    master: mymaster
+    nodes: localhost:6379
