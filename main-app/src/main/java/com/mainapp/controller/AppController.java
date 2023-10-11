@@ -1,6 +1,9 @@
 package com.mainapp.controller;
 
+import com.mainapp.client.ClientService;
+import com.mainapp.dto.PostDto;
 import com.mainapp.dto.TodoDto;
+import com.mainapp.dto.UserResponse;
 import com.mainapp.dto.user.UserDto;
 import com.mainapp.service.AppService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,14 +20,12 @@ public class AppController {
 
     @Autowired
     private AppService service;
+    @Autowired
+    private ClientService clientService;
 
-    @GetMapping("/todo/{id}")
-    public List<TodoDto> getTodoById(@PathVariable Long id) {
-        return service.todoById(id);
+    @GetMapping("/data")
+    public List<UserResponse> getTodoById() {
+        return service.getData();
     }
 
-    @GetMapping("/user/{userId}")
-    public UserDto getUserById(@PathVariable Long userId) {
-        return service.getUserById(userId);
-    }
 }

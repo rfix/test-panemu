@@ -3,6 +3,7 @@ package com.api3.config;
 import com.api3.repository.PostRepository;
 import com.api3.dto.PostDto;
 import com.api3.entity.Post;
+import com.api3.service.Api3Service;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
@@ -22,7 +23,7 @@ import java.util.List;
 public class Config {
 
     @Autowired
-    private PostRepository postRepository;
+    private Api3Service service;
 
     @Bean
     @LoadBalanced
@@ -47,19 +48,8 @@ public class Config {
         PostDto[] responseData = objectMapper.readValue(response.getBody(), PostDto[].class);
         List<PostDto> postDtoList = Arrays.stream(responseData).toList();
         log.info("response data : {} ", response.getBody());
-        savePost(postDtoList);
+        service.savePost(postDtoList);
         return postDtoList;
-    }
-
-    public void savePost(List<PostDto> postDtoList) {
-        postDtoList.forEach(postDto -> postRepository.save(
-                Post.builder()
-                        .id(postDto.getId())
-                        .userId(postDto.getUserId())
-                        .title(postDto.getTitle())
-                        .body(postDto.getBody())
-                        .build()
-        ));
     }
 
 }

@@ -12,6 +12,11 @@ spring:
          predicates:
            - Path=/external/**
 
+       - id: api3-service
+         uri: lb://API3-SERVICE
+         predicates:
+           - Path=/api3/**
+
  application:
    name: GATEWAY
 

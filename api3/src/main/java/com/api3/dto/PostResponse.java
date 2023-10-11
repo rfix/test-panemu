@@ -1,5 +1,4 @@
-package com.external.dto;
-
+package com.api3.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -8,10 +7,10 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
+@Builder
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class TodoClientResponse {
-
-    private List<TodoDto> todoDtoList;
+public class PostResponse {
+    private List<PostDto> posts;
 }
