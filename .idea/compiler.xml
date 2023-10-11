@@ -9,14 +9,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="main-app" />
         <module name="external-service" />
-        <module name="api3" />
+        <module name="api3-service" />
+        <module name="api2" />
         <module name="service-registry" />
         <module name="gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="api1-redis" target="17" />
-      <module name="api3" target="17" />
+      <module name="api2" target="17" />
+      <module name="api3-service" target="17" />
       <module name="external-service" target="17" />
       <module name="gateway" target="17" />
       <module name="identity-service" target="17" />
@@ -27,7 +29,8 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api1-redis" options="-parameters" />
-      <module name="api3" options="-parameters" />
+      <module name="api2" options="-parameters" />
+      <module name="api3-service" options="-parameters" />
       <module name="external-service" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="identity-service" options="-parameters" />

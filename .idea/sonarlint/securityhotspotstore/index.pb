@@ -1,0 +1,21 @@
+
+p
+@main-app/src/main/java/com/mainapp/client/UserServiceClient.java,6\0\60ec309fe384b977ce361f2d39ae9b34bc6ee724
+i
+9gateway/src/main/java/com/gateway/GatewayApplication.java,e\6\e66256fabf4ed008f0945a53a6f902e974576aa0
+{
+Kservice-registry/src/main/java/com/registry/ServiceRegistryApplication.java,2\1\217252b9fce075771e18bc1a6c0ecd3b7df7ee4e
+g
+7gateway/src/main/java/com/gateway/config/AppConfig.java,4\8\4851bb5e8a881a06f88c3042d15e140d0de369c5
+n
+>gateway/src/test/java/com/gateway/GatewayApplicationTests.java,3\a\3a37d45bdf4837b0a99536b68d4b56dc6adbc1e6
+?
+gateway/pom.xml,4\b\4b316bc60d1cfae51045f6fc8e58a8ae31f03ff3
+c
+3gateway/src/main/java/com/gateway/util/JwtUtil.java,a\b\ab7ac07a4b773e6ddcbce18ce965f2b42408007a
+H
+external-service/pom.xml,2\9\29ac6c4228117ff3f538483252e1a9f71d46dcc0
+p
+@main-app/src/main/java/com/mainapp/controller/AppController.java,d\c\dc856107bdd085a6df812d06225f7841440f5761
+9
+	api2/mvnw,d\e\de061d90ca54f4ae066d71dd4ee86354185e7048

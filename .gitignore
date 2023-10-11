@@ -2,4 +2,4 @@ service-registry/target/
 external-service/target/
 main-app/target/
 gateway/target/
-api3/target
+api2/target
