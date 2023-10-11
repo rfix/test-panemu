@@ -15,8 +15,6 @@ c
 3gateway/src/main/java/com/gateway/util/JwtUtil.java,a\b\ab7ac07a4b773e6ddcbce18ce965f2b42408007a
 H
 external-service/pom.xml,2\9\29ac6c4228117ff3f538483252e1a9f71d46dcc0
-p
-@main-app/src/main/java/com/mainapp/controller/AppController.java,d\c\dc856107bdd085a6df812d06225f7841440f5761
 9
 	api2/mvnw,d\e\de061d90ca54f4ae066d71dd4ee86354185e7048
 d
@@ -25,14 +23,10 @@ l
 <main-app/src/main/java/com/mainapp/config/MainAppConfig.java,c\7\c72d3e48dfa04ebb4c204a287a93a8d46305503f
 x
 Hexternal-service/src/main/java/com/external/service/ExternalService.java,d\1\d15d22e71c0795c9b29bc9d88a397658f3e8774b
-~
-Nexternal-service/src/main/java/com/external/controller/ExternalController.java,1\1\11e55f6d961f7f8759796e365450d33bc3d1b2e9
 l
 <external-service/src/main/java/com/external/dto/TodoDto.java,1\1\11f9a26c81c21209536aa31833df1ba9978a51e5
 j
 :main-app/src/main/java/com/mainapp/service/AppService.java,f\7\f70d1f37f8b5323e8b243f486c0ceb8d4a2c8c81
-l
-<main-app/src/main/java/com/mainapp/client/ClientService.java,b\f\bf5febf194e5292b75d59830096d63746596f987
 ^
 .api2/src/main/resources/application.properties,0\6\060df7d7b2a20d9435718c3c8075ed3f331b1d7c
 W

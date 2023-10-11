@@ -45,7 +45,6 @@ public class Config {
         );
         PostDto[] responseData = objectMapper.readValue(response.getBody(), PostDto[].class);
         List<PostDto> postDtoList = Arrays.stream(responseData).toList();
-        log.info("response data : {} ", response.getBody());
         service.savePost(postDtoList);
         return postDtoList;
     }

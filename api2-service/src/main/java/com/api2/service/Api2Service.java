@@ -37,4 +37,9 @@ public class Api2Service {
                 .build();
     }
 
+    public List<PostDto> getPostData() {
+        List<Post> posts = postRepository.findAll();
+        return posts.stream().map(this::toPostDto).limit(2L).toList();
+    }
+
 }
