@@ -25,8 +25,8 @@ public class AppController {
         return service.todoById(id);
     }
 
-//    @GetMapping("/user/{id}")
-//    public List<UserDto> getUserById(@PathVariable Long id) throws JsonProcessingException {
-//        return service.userById(id);
-//    }
+    @GetMapping("/user")
+    public List<UserDto> getUserById() throws JsonProcessingException {
+        return service.getUsers();
+    }
 }

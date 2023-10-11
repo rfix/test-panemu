@@ -2,8 +2,10 @@ package com.mainapp.config;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.mainapp.client.UserServiceClient;
 import com.mainapp.dto.user.UserDto;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
@@ -25,23 +27,12 @@ public class MainAppConfig {
         return new RestTemplate();
     }
 
-    private static final String BASE_URL = "https://jsonplaceholder.typicode.com/users";
-
-    RestTemplate template = new RestTemplate();
-    ObjectMapper objectMapper = new ObjectMapper();
+    @Autowired
+    private UserServiceClient userServiceClient;
 
     @Bean
-    @Cacheable(value = "userCache", key = "#user")
-    public List<UserDto> fetchUsers() throws JsonProcessingException {
-        log.info("================= fetch user data ===================");
-        ResponseEntity<String> response = template.exchange(
-                BASE_URL,
-                HttpMethod.GET,
-                null,
-                String.class
-        );
-        UserDto[] responseData = objectMapper.readValue(response.getBody(), UserDto[].class);
-        log.info("response data : {} ", response.getBody());
-        return Arrays.stream(responseData).toList();
+    public void syncUser() throws JsonProcessingException {
+        log.info("================== set user to redis ================");
+        userServiceClient.fetchUsers();
     }
 }

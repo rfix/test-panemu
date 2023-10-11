@@ -12,8 +12,7 @@ import java.util.Objects;
 
 @Component
 public class ExternalServiceClient {
-    @Autowired
-    private RestTemplate template;
+    RestTemplate template = new RestTemplate();
 
     public List<TodoDto> fetchTodoById(Long id) {
         ResponseEntity<TodoDto[]> response = template.getForEntity("http://EXTERNAL-SERVICE/external/todo/" + id, TodoDto[].class);
