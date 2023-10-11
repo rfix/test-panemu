@@ -7,9 +7,9 @@
       <module fileurl="file://$PROJECT_DIR$/api2/api3-service.iml" filepath="$PROJECT_DIR$/api2/api3-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/external-service/external-service.iml" filepath="$PROJECT_DIR$/external-service/external-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/jwt-apigateway-security.iml" filepath="$PROJECT_DIR$/.idea/jwt-apigateway-security.iml" />
       <module fileurl="file://$PROJECT_DIR$/main-app/main-app.iml" filepath="$PROJECT_DIR$/main-app/main-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-registry/service-registry.iml" filepath="$PROJECT_DIR$/service-registry/service-registry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/test-panemu.iml" filepath="$PROJECT_DIR$/.idea/test-panemu.iml" />
     </modules>
   </component>
 </project>
