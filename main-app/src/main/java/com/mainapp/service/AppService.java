@@ -22,9 +22,9 @@ public class AppService {
         return externalServiceClient.fetchTodoById(id);
     }
 
-    public List<UserDto> getUsers() {
+    public UserDto getUserById(Long userId) {
         try {
-            return userServiceClient.getUsers();
+            return userServiceClient.fetchUsersById(userId);
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }

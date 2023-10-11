@@ -34,5 +34,6 @@ public class MainAppConfig {
     public void syncUser() throws JsonProcessingException {
         log.info("================== set user to redis ================");
         userServiceClient.fetchUsers();
+//        userServiceClient.fetchUsers2();
     }
 }

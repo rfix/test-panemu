@@ -11,15 +11,14 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 @Service
 @Slf4j
 public class UserServiceClient {
     public static final Long CACHE_TIMEOUT = 30L;
-    public static final String USER_CACHE = "userCache";
+    public static final String USER_CACHE = "userCache-user-%s";
     private static final String BASE_URL = "https://jsonplaceholder.typicode.com/users";
     @Autowired
     private ValueOperations<String, Object> redisOps;
@@ -35,18 +34,26 @@ public class UserServiceClient {
                 String.class
         );
         UserDto[] responseData = objectMapper.readValue(response.getBody(), UserDto[].class);
+        List<UserDto> userDtoList = Arrays.stream(responseData).toList();
+        userDtoList.forEach(userDto -> {
+            try {
+                redisOps.set(String.format(USER_CACHE, userDto.getId()), objectMapper.writeValueAsString(userDto), CACHE_TIMEOUT, TimeUnit.MINUTES);
+            } catch (JsonProcessingException e) {
+                throw new RuntimeException(e);
+            }
+        });
         log.info("response data : {} ", response.getBody());
-        redisOps.set(String.format(USER_CACHE, Arrays.toString(responseData)), CACHE_TIMEOUT);
         return Arrays.stream(responseData).toList();
     }
 
-    public List<UserDto> getUsers() throws JsonProcessingException {
-        var userData = redisOps.get(USER_CACHE);
+    public UserDto fetchUsersById(Long userId) throws JsonProcessingException {
+        String key = String.format(USER_CACHE, userId);
+        var userData = redisOps.get(key);
+        log.info("userData : {} ", userData);
         if (Objects.isNull(userData)) {
-            return List.of();
+            return UserDto.builder().build();
         } else {
-            UserDto[] responseData = objectMapper.readValue(userData.toString(), UserDto[].class);
-            return Arrays.stream(responseData).toList();
+            return objectMapper.readValue(userData.toString(), UserDto.class);
         }
     }
 

@@ -11,16 +11,12 @@ y
 Iexternal-service/src/main/java/com/external/client/TodoServiceClient.java,f\e\feec0f2cc8f139829f04447c5a05951219f6b35a
 k
 ;main-app/src/main/java/com/mainapp/dto/user/AddressDto.java,0\b\0b76ca1a476f58769b989f2406e94f38014296e2
-h
-8main-app/src/main/java/com/mainapp/dto/user/UserDto.java,c\f\cf52b5d957d1ae26ab1124e3718295a8ffa7621b
 l
 <main-app/src/main/java/com/mainapp/dto/OrderResponseDTO.java,8\9\89c3e555a3bd7779a44beb8b8b7d7018d6071519
 €
 Pexternal-service/src/test/java/com/external/ExternalServiceApplicationTests.java,5\5\551051420f10af36cd278bc53fd215ab441d2fcb
 =
 api3/api3.iml,9\5\95461ab6266c4657252aa774742307694a9a1416
-E
-main-app/main-app.iml,4\9\495991845023b6cdbbd90725b361ec67993e4f5c
 \
 ,api3/src/main/java/com/api3/dto/PostDto.java,a\4\a4f8733ea1d89f2834d5870f27538b203d9c57b1
 i
