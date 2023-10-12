@@ -3,8 +3,6 @@
 Kservice-registry/src/main/java/com/registry/ServiceRegistryApplication.java,2\1\217252b9fce075771e18bc1a6c0ecd3b7df7ee4e
 p
 @main-app/src/main/java/com/mainapp/client/UserServiceClient.java,6\0\60ec309fe384b977ce361f2d39ae9b34bc6ee724
-H
-external-service/pom.xml,2\9\29ac6c4228117ff3f538483252e1a9f71d46dcc0
 9
 	api2/mvnw,d\e\de061d90ca54f4ae066d71dd4ee86354185e7048
 d

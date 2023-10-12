@@ -1,3 +1,4 @@
 DATABASE_URL=jdbc:mysql://rrofiq.baggrek.com:3306/api2
 DATABASE_USER=root
 DATABASE_PASS=YourPassword1!
+EUREKA_URL=http://localhost:8761/eureka/
