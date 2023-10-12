@@ -1,8 +1,6 @@
 
 {
 Kservice-registry/src/main/java/com/registry/ServiceRegistryApplication.java,2\1\217252b9fce075771e18bc1a6c0ecd3b7df7ee4e
-n
->gateway/src/test/java/com/gateway/GatewayApplicationTests.java,3\a\3a37d45bdf4837b0a99536b68d4b56dc6adbc1e6
 p
 @main-app/src/main/java/com/mainapp/client/UserServiceClient.java,6\0\60ec309fe384b977ce361f2d39ae9b34bc6ee724
 H
