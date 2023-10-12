@@ -1,14 +1,10 @@
 
-p
-@main-app/src/main/java/com/mainapp/client/UserServiceClient.java,6\0\60ec309fe384b977ce361f2d39ae9b34bc6ee724
 {
 Kservice-registry/src/main/java/com/registry/ServiceRegistryApplication.java,2\1\217252b9fce075771e18bc1a6c0ecd3b7df7ee4e
 9
 	api2/mvnw,d\e\de061d90ca54f4ae066d71dd4ee86354185e7048
 d
 4api2/src/main/java/com/api2/service/Api2Service.java,8\3\83dec98da768e6c95e20393e93d9072943bbc08f
-l
-<main-app/src/main/java/com/mainapp/config/MainAppConfig.java,c\7\c72d3e48dfa04ebb4c204a287a93a8d46305503f
 x
 Hexternal-service/src/main/java/com/external/service/ExternalService.java,d\1\d15d22e71c0795c9b29bc9d88a397658f3e8774b
 l

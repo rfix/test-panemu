@@ -20,13 +20,17 @@ import javax.sql.DataSource;
 public class RedisConfig {
     @Value("${app.redis.host}")
     private String redisHost;
+    @Value("${app.redis.password}")
+    private String password;
     @Value("${app.redis.port}")
     private int redisPort;
+
 
     @Bean
     JedisConnectionFactory jedisConnectionFactory() {
         var redisStandaloneConfiguration = new RedisStandaloneConfiguration(redisHost, redisPort);
         redisStandaloneConfiguration.setDatabase(1);
+        redisStandaloneConfiguration.setPassword(password);
         return new JedisConnectionFactory(redisStandaloneConfiguration);
     }
 
