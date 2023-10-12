@@ -1,0 +1,36 @@
+version: '3.3'
+services:
+  service-registry:
+    ports:
+      - '8761:8761'
+    container_name: service-registry
+    restart: always
+    image: 'service-registry:latest'
+
+  gateway:
+    ports:
+      - '8080:8080'
+    container_name: gateway
+    restart: always
+    image: 'gateway:latest'
+
+  external-service:
+    ports:
+      - '8083:8083'
+    container_name: external-service
+    restart: always
+    image: 'external-service:latest'
+
+  api2-service:
+    ports:
+      - '8082:8082'
+    container_name: api2-service
+    restart: always
+    image: 'api2-service:latest'
+
+  main-app:
+    ports:
+      - '8081:8081'
+    container_name: api2-service
+    restart: always
+    image: 'api2-service:latest'
