@@ -31,6 +31,6 @@ services:
   main-app:
     ports:
       - '8081:8081'
-    container_name: api2-service
+    container_name: main-app
     restart: always
-    image: 'api2-service:latest'
+    image: 'main-app:latest'
