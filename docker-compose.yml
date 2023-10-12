@@ -59,5 +59,6 @@ services:
       - EUREKA_URL=http://localhost:8761/eureka/
       - REDIS_DB=localhost
       - REDIS_PORT=6379
+      - REDIS_PASSWORD=passwordredis
     restart: always
     image: 'main-app:latest'
