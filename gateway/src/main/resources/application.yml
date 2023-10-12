@@ -16,7 +16,6 @@ spring:
          uri: lb://API2-SERVICE
          predicates:
            - Path=/api2/**
-           - Path=/api2/**
 
  application:
    name: GATEWAY
