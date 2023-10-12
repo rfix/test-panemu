@@ -32,10 +32,4 @@ public class Api2Controller {
         return new ResponseEntity<>(service.getPostData(), headers, HttpStatus.OK);
     }
 
-    @GetMapping(value = "/test")
-    public String test() {
-        log.info("request test");
-        return "danggoreng";
-    }
-
 }
