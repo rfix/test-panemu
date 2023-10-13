@@ -11,3 +11,9 @@
 ## run
 - . build-image.sh
 - docker-compose up
+
+## test api
+- json data 
+    http://localhost:8080/main/data
+- xml data
+  http://localhost:8080/api2/post
